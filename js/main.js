@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
             crossFade: true
         },
         simulateTouch: false,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false
-        },
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false
+        // },
         speed: 1000
     });
 
@@ -32,10 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // image output in <div class="logos"></div>
     for (let key of logos) {
         let imgWrapper = document.createElement('div');
-        imgWrapper.classList.add('current_img')
+        imgWrapper.classList.add('current_img');
+
         let img = document.createElement('img');
         img.alt = key;
         img.src = `images/logos/${key}.png`;
+
         imgWrapper.append(img);
         logoWrapper.append(imgWrapper);
     }

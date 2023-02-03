@@ -1,19 +1,13 @@
 /* initial styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-@font-face {
+/* @font-face {
   font-family: "InterFont";
   font-display: swap;
   src: url("../fonts/Inter-Regular.otf");
   font-weight: normal;
   font-style: normal;
-}
-@font-face {
-  font-family: "InterFontBlack";
-  font-display: swap;
-  src: url("../fonts/Inter-Bold.otf");
-  font-weight: normal;
-  font-style: normal;
-}
+} */
 
 *,
 *::before,
@@ -44,7 +38,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: "InterFont";
+  font-family: 'Inter', sans-serif;
   letter-spacing: 1px;
   background: #293b2b;
 }
@@ -109,6 +103,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+	width: 100%;
 }
 .header_wrapper h2 {
   line-height: 1;
@@ -146,41 +141,55 @@ header {
 }
 
 .diposito_content {
-  width: 22%;
+  width: 28%;
   text-align: center;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
   padding: 1rem 0;
   background-color: #fff;
   border-radius: 0 0 2rem 2rem;
 	color: #293B2B;
-	font-size: clamp(8px, .8vw, 22px);
 }
 .diposito_content h2 {
 	font-style: italic;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: 900;
+	font-weight: 800;
+	font-size: clamp(8px, 2vw, 20px);
 }
 .diposito_content h1 {
 	font-style: italic;
-	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 900;
+	font-size: clamp(10px, 2vw, 22px);
 }
 
 .main_title {
 	display: flex;
 	flex-direction: column;
-	width: 25%;
+	width: 40%;
+	font-style: italic;
+	font-weight: 800;
+}
+.main_title h2 {
+	font-weight: 800;
+	text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+	font-size: clamp(1rem, 2vw, 1.9rem);
 }
 .main_title h2:nth-child(2) {
-	text-align: right;
+	margin-left: 7rem !important;
 }
 .main_title h1:first-of-type {
-	text-align: right;
+	margin-left: 3rem !important;
 	margin-right: 2rem;
+	font-weight: 900;
+	font-size: clamp(1.6rem, 2.5vw, 2.5rem);
+	text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
 }
 
 .main_sub_title {
 	margin: 3.75rem 0 1.875rem;
+}
+.main_sub_title h2 {
+	text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+	font-weight: 500;
+	font-size: clamp(15px, 1.5vw, 28px);
 }
 
 .registration_btn {
@@ -188,7 +197,7 @@ header {
   background: linear-gradient(102.12deg, #63d737 7.53%, #058048 98.25%);
   border-radius: 2rem;
   padding: 1.2rem 7rem;
-	font-size: clamp(22px, 1.5vw, 36px);
+	font-size: clamp(18px, 1.5vw, 36px);
 	line-height: 100%;
 	border: 0;
 	cursor: pointer;
@@ -200,21 +209,21 @@ header {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: .3rem;
+	width: .5rem;
 	box-shadow: 0 0 1rem #fff;
 	height: 100%;
 	background-color: rgba(255, 255, 255, .8);
-	transform: translateX(-4rem) skewX(-45deg);
+	transform: translateX(-2rem) skewX(-45deg);
 	animation: shine 3s infinite;
 	z-index: 1;
 }
 
 @keyframes shine {
 	0% {
-		transform: translateX(-4rem) skewX(-45deg);
+		transform: translateX(-3rem) skewX(-45deg);
 	}
 	100% {
-		transform: translateX(30rem) skewX(-45deg);
+		transform: translateX(40rem) skewX(-45deg);
 	}
 }
 
@@ -240,9 +249,16 @@ header {
   height: 100%;
   position: relative;
 }
-.swiper-slide img {
-  width: 100%;
+.desktop_bg {
+	display: block;
+}
+.mobile_bg {
+	display: none;
+}
+.swiper-slide .slider_bg {
+  max-width: 100%;
 	height: 100%;
+	object-fit: cover;
 }
 .swiper-slide::after {
   content: "";
@@ -298,6 +314,7 @@ footer {
 }
 .footer_content_wrapper h2 {
   color: #fff;
+	display: block;
 }
 
 .form_wrapper {
@@ -350,4 +367,11 @@ footer {
   justify-content: center;
   align-items: center;
   width: calc(100% / 8 - 1rem);
+}
+.current_img img {
+	max-width: 100%;
+}
+
+.mobile_logo {
+	display: none;
 }

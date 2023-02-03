@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/media.css">
     <title>Mexico</title>
   </head>
   <body>
@@ -34,7 +35,8 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./images/bg/slide1.png" alt="" />
+            <img class="slider_bg desktop_bg" src="./images/bg/slide1.png" alt="" />
+            <img class="slider_bg mobile_bg" src="./images/bg/mobile_slide1.png" alt="" />
             <div class="slide_content_wrapper">
               <div class="main_title">
                 <h2>Bono de primer</h2>
@@ -43,7 +45,7 @@
               </div>
               <div class="main_sub_title">
                 <h2>
-                  COMBOBOOST <br />
+                  COMBOBOOST
                   hasta el 100% <br />
                   en apuestas combinadas
                 </h2>
@@ -56,12 +58,13 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="./images/bg/slide2.png" alt="" />
+            <img class="slider_bg desktop_bg" src="./images/bg/slide2.png" alt="" />
+            <img class="slider_bg mobile_bg" src="./images/bg/mobile_slide2.png" alt="" />
             <div class="slide_content_wrapper second_slide">
               <div class="main_sub_title">
                 <h2>
-									Reembolso del 500% <br>
-									en apuestas deportivas
+                  Reembolso del 500% <br />
+                  en apuestas deportivas
                 </h2>
               </div>
               <div class="registration">
@@ -86,11 +89,13 @@
           </form>
         </div>
         <div class="logos"></div>
+				<div class="mobile_logo">
+					<h2>LOGO</h2>
+				</div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- <script src="js/logos.js"></script> -->
     <script src="js/main.js"></script>
   </body>
 </html>
