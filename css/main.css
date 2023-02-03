@@ -141,7 +141,7 @@ header {
 }
 
 .diposito_content {
-  width: 28%;
+  width: 25%;
   text-align: center;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
   padding: 1rem 0;
@@ -152,12 +152,12 @@ header {
 .diposito_content h2 {
 	font-style: italic;
 	font-weight: 800;
-	font-size: clamp(8px, 2vw, 20px);
+	font-size: clamp(11px, 2vw, 20px);
 }
 .diposito_content h1 {
 	font-style: italic;
 	font-weight: 900;
-	font-size: clamp(10px, 2vw, 22px);
+	font-size: clamp(13px, 2vw, 22px);
 }
 
 .main_title {
@@ -190,6 +190,12 @@ header {
 	text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
 	font-weight: 500;
 	font-size: clamp(15px, 1.5vw, 28px);
+}
+.desktop_sub_title {
+	display: block;
+}
+.mobile_sub_title {
+	display: none;
 }
 
 .registration_btn {
@@ -340,12 +346,9 @@ footer {
   font-size: clamp(12px, 2vw, 17px);
 }
 .form_wrapper button {
-  top: 0;
-  right: 0;
   padding: 0.75rem 3rem 0.75rem 5rem;
   border-radius: 0 2rem 2rem 0;
   background: linear-gradient(102.12deg, #63d737 7.53%, #058048 98.25%);
-  border-radius: 99.1525px;
   border: 2px solid #058048;
   cursor: pointer;
   color: #fff;

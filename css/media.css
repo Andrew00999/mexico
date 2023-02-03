@@ -6,7 +6,7 @@
 
 @media (max-width: 992px) {
 	.header_wrapper {
-		width: 70%;
+		width: 80%;
 		margin: 0 auto;
 	}
   .header_nav a:first-of-type {
@@ -20,9 +20,11 @@
 		flex-wrap: nowrap;
 		padding: .5rem 0;
 		border-radius: 0 0 1.5rem 1.5rem;
-		width: 60%;
+		width: 65%;
 		display: flex;
 		justify-content: center;
+		align-items: center;
+		column-gap: .5rem;
 	}
 	.slide_content_wrapper {
 		align-items: center;
@@ -62,7 +64,7 @@
 		width: calc(100% / 5 - 1rem);
 	}
 	.form_wrapper {
-		width: 100%;
+		width: 120%;
 	}
 	.form_wrapper button {
 		padding: 0.75rem 1.5rem 0.75rem 3.5rem;
@@ -75,6 +77,32 @@
 	}
 	.mobile_bg {
 		display: block;
+	}
+	.desktop_sub_title {
+		display: none;
+	}
+	.mobile_sub_title {
+		display: block;
+		text-align: center;
+	}
+	.swiper-slide::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(
+				0deg,
+				rgba(41, 59, 43, 0.35),
+				rgba(41, 59, 43, 0.35)
+			),
+			radial-gradient(
+				58.29% 40% at 50% 54%,
+				rgba(41, 59, 43, 0) 50.26%,
+				#293b2b 100%
+			);
+		z-index: 1;
 	}
 }
 

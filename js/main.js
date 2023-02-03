@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
             crossFade: true
         },
         simulateTouch: false,
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false
-        // },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        },
         speed: 1000
     });
 
